@@ -14,6 +14,7 @@ describe '#parrot' do
 
   it 'should output the given phrase when called with an argument' do
     expect($stdout).to receive(:puts).with("Pretty bird!")
+    binding.pry
     parrot("Pretty bird!")
   end
 
